@@ -5,7 +5,7 @@ Function endpoints are protected and need to be invoked using valid authenticati
 ## Make sure you have the following information....
 
 - your tenancy OCID, user OCID, fingerprint, private Key - [details here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm)
-- the HTTP endpoint for your function - can be found using `fn list routes <app_name>`
+- to find the HTTP endpoint for your function - execute `fn inspect fn <app_name> <function_name>` and the look out for value of `fnproject.io/fn/invokeEndpoint` attribute
 
 ## Details
 
